@@ -1,8 +1,3 @@
-<h1>Home Page</h1>
+<div><a href="<%= auth_user_info['profile'] %>"><img class="avatar" src="<%= auth_user_info['picture'] %>"></a></div>
 
-<% if auth_authenticated? %>
-  <p><%= auth_current_user %></p>
-<% else %>
-  <p>You are not authenticated</p>
-  <a href="/not_implemented_yet">Login</a>
-<% end %>
+<div><a class="auth_link" href="<%= auth_logout_path %>">Logout</a></div>

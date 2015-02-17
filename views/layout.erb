@@ -13,5 +13,6 @@
         <div class="container">
             <%= yield %>
         </div>
+        <div class="debugging"><%= JSON.pretty_generate(session.to_h) %></div>
     </body>
 </html>

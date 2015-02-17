@@ -2,12 +2,19 @@ html, body{
     background: #eeeeee;
   }
 
-.container{
+.debugging, .container{
   width: 80%;
   margin: 2em auto;
   background: #ffffff;
   border: 2px solid #333;
   border-radius: 5px;
   padding: 2em;
+}
+
+.debugging{
+  white-space: pre;
+}
+
+.container{
   min-height: 20em;
 }

@@ -19,7 +19,7 @@ gem 'thin'
 # Rake things up!
 
 gem 'rake'
-#gem 'httparty'
+gem 'httparty'
 gem 'dotenv'
 gem 'rack-flash3'
 

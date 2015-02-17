@@ -1,20 +1,44 @@
 html, body{
     background: #eeeeee;
-  }
+}
 
 .debugging, .container{
-  width: 80%;
-  margin: 2em auto;
-  background: #ffffff;
-  border: 2px solid #333;
-  border-radius: 5px;
-  padding: 2em;
+    width: 80%;
+    margin: 2em auto;
+    background: #ffffff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 2em;
 }
 
 .debugging{
-  white-space: pre;
+    white-space: pre;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter';
 }
 
 .container{
-  min-height: 20em;
+    min-height: 20em;
+}
+
+.auth_link {
+    width: 80%;
+    display: block;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    border: 2px solid #4444FF;
+    text-align: center;
+    border-radius: 0.2em;
+    background-color: #3965ff;
+    font-weight: bold;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.avatar{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: auto
 }

@@ -22,6 +22,7 @@ gem 'rake'
 gem 'httparty'
 gem 'dotenv'
 gem 'rack-flash3'
+gem 'google-api-client'
 
 group :development, :test do
   gem 'rspec-html-matchers'
@@ -35,5 +36,4 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rerun'
-  gem 'debugger'
 end

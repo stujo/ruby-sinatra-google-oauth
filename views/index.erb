@@ -2,7 +2,8 @@
 
 <% if auth_authenticated? %>
   <p><%= auth_current_user %></p>
+    <a href="/logout">Logout</a>
 <% else %>
   <p>You are not authenticated</p>
-  <a href="/not_implemented_yet">Login</a>
+  <a href="/login">Login</a>
 <% end %>

@@ -1,0 +1,8 @@
+<h1>Home Page</h1>
+
+<% if auth_authenticated? %>
+  <p><%= auth_current_user %></p>
+<% else %>
+  <p>You are not authenticated</p>
+  <a href="/not_implemented_yet">Login</a>
+<% end %>

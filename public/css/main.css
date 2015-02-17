@@ -1,0 +1,13 @@
+html, body{
+    background: #eeeeee;
+  }
+
+.container{
+  width: 80%;
+  margin: 2em auto;
+  background: #ffffff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 2em;
+  min-height: 20em;
+}

@@ -1,7 +1,7 @@
 require 'oauth2'
 
 
-GOOGLE_API_SCOPES = ['https://www.googleapis.com/auth/plus.me'].join(' ')
+GOOGLE_API_SCOPES = ['profile','email'].join(' ')
 
 helpers do
   def auth_client
@@ -13,11 +13,11 @@ helpers do
   end
 
   def auth_token_wrapper
-    @auth_token_wrapper ||= OAuth2::AccessToken.new(auth_client,
+    OAuth2::AccessToken.new(auth_client,
                                                     session[:access_token],
                                                     {
                                                         :refresh_token => session[:refresh_token],
-                                                        :header_format => 'OAuth %s'
+                                                        :header_format => 'Bearer %s'
                                                     }
     )
   end
